@@ -4,8 +4,8 @@ if (a <=400){
 return result='This one is on me!'
 }
 
-else if (a <=2499){
-  return result='That will be 30 dollars!'
+else if (a >=2000 && a<=2499){
+  return result='I will gladly take your thirty bucks.'
 }
 else (a>=2500);{
  return result='No can do.'
@@ -27,14 +27,15 @@ ternaryCheckCity("nairobi")
 
 
 function switchOnCharmFromTip(c){
+let result;
 if (c==="generous"){
   return result="Thank you so much."
 }
 else if( c==='not as generous'){
-  return result="Thank you ."
+  return result='Thank you.'
 }
 else{
-  return result="bye."
+  return result='Bye.'
 }
 }
-switchOnCharmFromTip()
+switchOnCharmFromTip(generous)
